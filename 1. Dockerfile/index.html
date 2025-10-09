@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to hiiii NGINX</title>
+  <style>
+    :root {
+      --bg-light: #f9fafb;
+      --bg-dark: #121212;
+      --text-light: #1a1a1a;
+      --text-dark: #f3f3f3;
+      --accent: #00b894;
+    }
+
+    html {
+      color-scheme: light dark;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-light);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      transition: all 0.3s ease;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: var(--bg-dark);
+        color: var(--text-dark);
+      }
+    }
+
+    h1 {
+      font-size: 2.8em;
+      color: var(--accent);
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+      max-width: 600px;
+      text-align: center;
+      margin: 0.5em 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 2em;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 2em 3em;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .card {
+        background: rgba(30, 30, 30, 0.9);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🚀 Welcome to GREEN</h1>
+    <p>Your NGINX web server is <strong>successfully installed</strong> and running!</p>
+    <p>For configuration guides and documentation, visit:
+      <br>
+      <a href="http://nginx.org/">nginx.org</a> |
+      <a href="http://nginx.com/">nginx.com</a>
+    </p>
+    <footer>
+      <em>Thank you for using NGINX — High Performance Web Server</em>
+    </footer>
+  </div>
+</body>
+</html>
