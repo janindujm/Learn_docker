@@ -1,0 +1,2 @@
+#ignore test files in all directories 
+**/*.test.js 
