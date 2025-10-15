@@ -6,5 +6,6 @@ RUN npm ci
 COPY . .
 
 ENV PORT=5000
+ENV App_NAME="New App"
 
 CMD [ "node", "src/index.js" ]
